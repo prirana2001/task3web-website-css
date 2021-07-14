@@ -1,0 +1,146 @@
+*,*::before,*::after{
+    box-sizing:border-box;
+
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:black;
+} 
+
+.navbar{
+    display:inline-block;
+    font-size: 25px;
+}
+.navbar li{
+    display:inline-block;
+}
+.navbar li a{
+    color:purple;
+    padding:15px 15px;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color:red;
+}
+
+.btn{
+    margin:0px 10px;
+    background-color: white;
+    color:black;
+    padding:4px 20px;
+    border:2px red;
+    border-radius:10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.top{
+    display:block;
+    width:100%;
+    float:center;
+    text-align:center;
+    height:100px;
+    border:8px solid red;
+    margin:20px;
+    background-image:linear-gradient(to right,orange,yellow,purple);
+    padding:3px;
+    border-radius:20px;
+    font-size: 30px;
+}
+
+.left{
+    padding:2px;
+    top:7px;
+    display:inline-block;
+    width:45%;
+    height:500px;
+    background-image:linear-gradient(to right,red,yellow,green);
+    margin:4px;
+}   
+.insideleft{
+    display:inline-block;
+    width:98%;
+    height:486px;
+    background:black;
+    margin:5px;
+    font-family: arial;
+    color:white;
+} 
+.name{
+    text-align: center;
+    font-size: 3em;
+    padding:2 rem;
+}
+.image{
+    background-repeat:no-repeat;
+}
+.right{
+    position:relative;
+    top:50px;
+    float:right;
+    font-style: italic;
+    font-size: 23px;
+    display:block;
+    text-align:center;
+    width:50%;
+    height:500px;
+    border: 5px solid rgb(56, 159, 207);
+    background-image:linear-gradient(to right,blue,pink,green);
+    border-radius:20px;
+    color:white;
+}
+.mid{
+    margin:5px;
+}
+
+.bottom{
+    height:300px;
+    margin:10px;
+    padding:50px;
+    width:100%;
+    border:5px solid red;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.item{
+    width:350px;
+    height:200px;
+    background-color: lightcoral;
+    border:3px solid green;
+    margin:20px;
+    padding:3px;
+}
+.down{
+    visibility: hidden;
+    width:100%;
+    background:greenyellow;
+    border:5px solid blue;
+}
+.formedia{
+    font-size:50px;
+    text-align:center;
+    background-color: pink;
+    color:purple;
+    border:5px solid green;
+}
+@media (max-width:300px){
+    #box1{
+        display:block;
+        background-color: lightseagreen;
+    }
+}
+@media(min-width:300px) and (max-width:500px){
+    #box2{
+        display:block;
+        background-color: red;
+    }
+}
+@media(min-width:500px) and (max-width:800px){
+    #box3{
+        display:block;
+        background-color:blue;
+    }
+}
